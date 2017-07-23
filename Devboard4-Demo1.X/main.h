@@ -11,7 +11,7 @@
 #include <xc.h>
 
 // Set the config fuses
-__CONFIG (FOSC_INTRC_NOCLKOUT & WDTE_OFF & PWRTE_OFF & BOREN_OFF & LVP_OFF & WRT_OFF & DEBUG_ON & CPD_OFF & CP_OFF & IESO_OFF & FCMEN_OFF);
+__CONFIG (FOSC_INTRC_NOCLKOUT & WDTE_OFF & PWRTE_OFF & BOREN_OFF & LVP_OFF & WRT_OFF & DEBUG_OFF & CPD_OFF & CP_OFF & IESO_OFF & FCMEN_OFF);
 
 #define _XTAL_FREQ 4000000           // For the delays library
 
