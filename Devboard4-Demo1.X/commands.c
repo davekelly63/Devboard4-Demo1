@@ -53,7 +53,7 @@ void CommandProcessor (uint8_t ch)
                   break;
             }
             
-            printf ("Ch %u\n", channelNumber);
+            // printf ("Ch %u\n", channelNumber);
          }
          
          break;
