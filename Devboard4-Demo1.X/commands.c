@@ -35,15 +35,15 @@ void CommandProcessor (uint8_t ch)
          // Just handling a relay for now
          if (channelNumber >= 0x10)
          {
-            channelNumber -= 0x10;
-
             switch (channelNumber)
             {
-               case 0:
+               case 16:
+               case 32:
                   RB0 = relayState;
                   break;
 
-               case 1:
+               case 17:
+               case 33:
                   RB1 = relayState;
                   break;
 
@@ -52,8 +52,11 @@ void CommandProcessor (uint8_t ch)
                   // Invalid relay
                   break;
             }
-            break;
+            
+            printf ("Ch %u\n", channelNumber);
          }
+         
+         break;
 
       case LCD_MESSAGE:
 
